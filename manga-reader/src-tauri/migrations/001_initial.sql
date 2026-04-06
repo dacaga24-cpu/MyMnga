@@ -1,0 +1,20 @@
+CREATE TABLE IF NOT EXISTS mangas (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    title TEXT NOT NULL,
+    author TEXT,
+    cover_path TEXT,
+    status TEXT DEFAULT 'reading',
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS chapters (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    manga_id INTEGER NOT NULL,
+    number REAL NOT NULL,
+    title TEXT,
+    folder_path TEXT NOT NULL,
+    read BOOLEAN DEFAULT 0,
+    last_page INTEGER DEFAULT 0,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (manga_id) REFERENCES mangas(id) ON DELETE CASCADE
+);
