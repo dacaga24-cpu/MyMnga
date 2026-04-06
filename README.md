@@ -125,8 +125,8 @@ manga-reader/
 | Phase | Goal | Status |
 |-------|------|--------|
 | **1 — Setup**    | Initialize Tauri + Vue 3 + dependencies | ✅ Done    |
-| **2 — Database** | Create SQLite schema and base queries   | ⬜ Pending |
-| **3 — Library**  | UI to list and organize mangas          | ⬜ Pending |
+| **2 — Database** | Create SQLite schema and base queries   | ✅ Done    |
+| **3 — Library**  | UI to list and organize mangas          | ✅ Done    |
 | **4 — Reader**   | Image viewer per chapter                | ⬜ Pending |
 | **5 — Import**   | Load local folders/files                | ⬜ Pending |
 | **6 — Cloud**    | Remote sync                             | ⬜ Future  |
